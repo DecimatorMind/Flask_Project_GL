@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Glue Labs Flask Project
+{% endblock %}
+
+{% block heading %}
+Pranjal Bhardwaj
+{% endblock %}
+
+{% block content %}
+<h2>Following are the contents of the course : </h2>
+<h4>Dynamic and Static Template Routing</h4>
+<div>
+    <ul style="font-size: medium;">
+        <li style="display:inline"><a href="{{url_for('about')}}">About</a></li>
+        <br>
+        <li style="display:inline"><a href="{{url_for('loop',number = 10)}}">Printing N Elements in Loop</a></li>
+        <br>
+    </ul>
+</div>
+<h4>Form Handling</h4>
+<div>
+    <ul style="font-size: medium;">
+        <li style="display:inline"><a href="{{url_for('about')}}">About</a></li>
+    </ul>
+</div>
+{% endblock %}
