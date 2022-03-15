@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+Printing elements in loop using Jinja
+{% endblock %}
+{% block content %}
+{% for i in userlist %}
+    {{ i.full_name }}
+    {{ i.email }}
+    <br>
+{% endfor %}
+{% endblock %}
